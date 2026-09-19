@@ -1,0 +1,35 @@
+{
+  "shadow": {
+    "$type": "shadow",
+    "sm": {
+      "$description": "Subtle elevation — pills, small cards.",
+      "$value": { "color": "rgba(0,0,0,0.08)", "offsetX": "0px", "offsetY": "2px", "blur": "8px", "spread": "0px" },
+      "$extensions": {
+        "com.cryptobros.modes": {
+          "dark": { "color": "rgba(0,0,0,0.3)", "offsetX": "0px", "offsetY": "2px", "blur": "8px", "spread": "0px" }
+        }
+      }
+    },
+    "md": {
+      "$description": "Medium elevation — toggle thumbs, dropdowns.",
+      "$value": { "color": "rgba(0,0,0,0.2)", "offsetX": "0px", "offsetY": "2px", "blur": "2.5px", "spread": "0px" },
+      "$extensions": {
+        "com.cryptobros.modes": {
+          "dark": { "color": "rgba(0,0,0,0.4)", "offsetX": "0px", "offsetY": "2px", "blur": "2.5px", "spread": "0px" }
+        }
+      }
+    },
+    "modal": {
+      "$description": "Usage-named shadow from the dashboard's four; dark-only (dashboard is hard-forced dark).",
+      "$value": { "color": "rgba(0,0,0,0.6)", "offsetX": "0px", "offsetY": "24px", "blur": "64px", "spread": "0px" }
+    },
+    "menu": {
+      "$description": "Usage-named shadow from the dashboard's four; dark-only (dashboard is hard-forced dark).",
+      "$value": { "color": "rgba(0,0,0,0.55)", "offsetX": "0px", "offsetY": "16px", "blur": "48px", "spread": "0px" }
+    },
+    "tooltip": {
+      "$description": "Usage-named shadow from the dashboard's four; dark-only (dashboard is hard-forced dark).",
+      "$value": { "color": "rgba(0,0,0,0.55)", "offsetX": "0px", "offsetY": "10px", "blur": "30px", "spread": "0px" }
+    }
+  }
+}

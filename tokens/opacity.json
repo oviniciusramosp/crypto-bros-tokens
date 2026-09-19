@@ -1,0 +1,9 @@
+{
+  "opacity": {
+    "$type": "number",
+    "disabled": { "$value": 0.5, "$description": "Disabled state for interactive elements." },
+    "pressedDark": { "$value": 0.85, "$description": "Press feedback in dark mode." },
+    "pressedLight": { "$value": 0.7, "$description": "Press feedback in light mode (stronger to compensate for light backgrounds)." },
+    "active": { "$value": 1, "$description": "Fully visible." }
+  }
+}

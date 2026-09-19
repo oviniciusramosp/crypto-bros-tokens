@@ -1,0 +1,58 @@
+{
+  "color": {
+    "chart": {
+      "$type": "color",
+      "bullish": {
+        "$value": "#22C55E",
+        "$description": "Chart-specific up/bullish color. Same hex as color.success but a distinct semantic token — chart code must not depend on the status palette."
+      },
+      "bearish": {
+        "$value": "#EF4444",
+        "$description": "Chart-specific down/bearish color. Same hex as color.error but a distinct semantic token."
+      },
+      "fng": {
+        "$description": "Fear & Greed index band colors. Source: components/ui/constants/fngConstants.ts FNG_LEVEL_COLORS. Mode-invariant.",
+        "extremeFear": { "$value": "#EF4444" },
+        "fear": { "$value": "#F97316" },
+        "neutral": { "$value": "#9CA3AF" },
+        "greed": { "$value": "#86EFAC" },
+        "extremeGreed": { "$value": "#22C55E" }
+      },
+      "indicator": {
+        "$description": "Base 3-band indicator tones (fear/neutral/greed) shared by FearGreedWidget, WidgetOverrideSettings and indicator-info for mid-range tones; extremes come from color.success/color.error. Genuinely distinct hex values from color.chart.fng.* — not the same palette. Source: fngConstants.ts INDICATOR_COLORS.",
+        "fear": {
+          "$value": "{color.primitive.bitcoin}",
+          "$description": "Literally #F7931A — same value as color.primitive.bitcoin, aliased per the no-duplicate-literal rule."
+        },
+        "neutral": { "$value": "#B0B0B0" },
+        "greed": { "$value": "#93C47D" }
+      },
+      "ema": {
+        "$description": "Named EMA overlay line palette. Source: constants/crypto.ts EMA_COLORS (12 named colors, reused by chart embeds, HLine/icon/cycle overlays).",
+        "blue": { "$value": "#3B82F6" },
+        "purple": { "$value": "#8B5CF6" },
+        "green": { "$value": "#22C55E" },
+        "orange": {
+          "$value": "{color.primitive.bitcoin}",
+          "$description": "Literally #F7931A — same value as color.primitive.bitcoin, aliased per the no-duplicate-literal rule."
+        },
+        "red": { "$value": "#EF4444" },
+        "gray": { "$value": "#9CA3AF" },
+        "cyan": { "$value": "#06B6D4" },
+        "pink": { "$value": "#E6007A" },
+        "amber": { "$value": "#EAB308" },
+        "brown": { "$value": "#92400E" },
+        "silver": { "$value": "#C0C0C0" },
+        "indigo": { "$value": "#6366F1" }
+      },
+      "emaPeriod": {
+        "$description": "Canonical weekly EMA period -> color mapping. Source: constants/crypto.ts EMA_PERIOD_DEFAULT_COLOR (also duplicated verbatim in the dashboard's chartEmbedSyntax.js). Each entry is literally the same data as color.chart.ema.* keyed by period number instead of color name, so every entry aliases 1:1 into color.chart.ema.*.",
+        "50": { "$value": "{color.chart.ema.green}" },
+        "100": { "$value": "{color.chart.ema.cyan}" },
+        "200": { "$value": "{color.chart.ema.blue}" },
+        "250": { "$value": "{color.chart.ema.orange}" },
+        "450": { "$value": "{color.chart.ema.red}" }
+      }
+    }
+  }
+}

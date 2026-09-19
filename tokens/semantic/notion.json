@@ -1,0 +1,513 @@
+{
+  "notion": {
+    "$type": "color",
+    "$description": "Full Notion color system straight from theme/notionColors.ts. The odd callout shape ({light, dark, text, textDark}) is normalised into a {bg, text} pair per mode: notion.callout.<name> holds bg (light $value / dark extension), and the matching text colors live in the sibling notion.calloutText.<name>. The app adapter restores the original {bg, text} object shape at runtime.",
+    "text": {
+      "$description": "Source: NOTION_TEXT_COLORS.",
+      "default": {
+        "$value": "{color.primitive.black}",
+        "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.white}" } }
+      },
+      "gray": {
+        "$value": "#787774",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#9B9B9B" } }
+      },
+      "brown": {
+        "$value": "#9F6B53",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#BA856F" } }
+      },
+      "orange": {
+        "$value": "#D9730D",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FFA344" } }
+      },
+      "yellow": {
+        "$value": "#CB912F",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FFDC49" } }
+      },
+      "green": {
+        "$value": "#448361",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#6DB87E" } }
+      },
+      "blue": {
+        "$value": "#337EA9",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#529CCA" } }
+      },
+      "purple": {
+        "$value": "#9065B0",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#A475C2" } }
+      },
+      "pink": {
+        "$value": "#C14C8A",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#E255A1" } }
+      },
+      "red": {
+        "$value": "#D44C47",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FF7369" } }
+      }
+    },
+    "background": {
+      "$description": "Source: NOTION_BACKGROUND_COLORS. Keys drop the redundant '_background' suffix since they already live under notion.background.*.",
+      "gray": {
+        "$value": "#F1F1EF",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#454B4E" } }
+      },
+      "brown": {
+        "$value": "#F4EEEE",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#4D3D3A" } }
+      },
+      "orange": {
+        "$value": "#FBECDD",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#5C3C1E" } }
+      },
+      "yellow": {
+        "$value": "#FBF3DB",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#564328" } }
+      },
+      "green": {
+        "$value": "#EDF3EC",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#364A3F" } }
+      },
+      "blue": {
+        "$value": "#E7F3F8",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#264653" } }
+      },
+      "purple": {
+        "$value": "#F4F0F7",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#443D56" } }
+      },
+      "pink": {
+        "$value": "#F9F0F3",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#533245" } }
+      },
+      "red": {
+        "$value": "#FDEBEB",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#593938" } }
+      }
+    },
+    "tag": {
+      "$description": "Badge bg/text pairs. Source: NOTION_TAG_COLORS. Each {bg, text} pair decomposes into two leaf color tokens so every DTCG leaf stays a single color value.",
+      "default": {
+        "bg": {
+          "$value": "rgba(227, 226, 224, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 255, 255, 0.13)" } }
+        },
+        "text": {
+          "$value": "#37352F",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 255, 255, 0.81)" } }
+        }
+      },
+      "gray": {
+        "bg": {
+          "$value": "rgba(227, 226, 224, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(151, 154, 155, 0.24)" } }
+        },
+        "text": {
+          "$value": "#787774",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#9B9B9B" } }
+        }
+      },
+      "brown": {
+        "bg": {
+          "$value": "rgba(238, 224, 218, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(186, 133, 111, 0.24)" } }
+        },
+        "text": {
+          "$value": "#64473A",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#BA856F" } }
+        }
+      },
+      "orange": {
+        "bg": {
+          "$value": "rgba(250, 222, 201, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 163, 68, 0.24)" } }
+        },
+        "text": {
+          "$value": "#D9730D",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FFA344" } }
+        }
+      },
+      "yellow": {
+        "bg": {
+          "$value": "rgba(253, 236, 200, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 220, 73, 0.24)" } }
+        },
+        "text": {
+          "$value": "#CB912F",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FFDC49" } }
+        }
+      },
+      "green": {
+        "bg": {
+          "$value": "rgba(219, 237, 219, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(109, 184, 126, 0.24)" } }
+        },
+        "text": {
+          "$value": "#448361",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#6DB87E" } }
+        }
+      },
+      "blue": {
+        "bg": {
+          "$value": "rgba(211, 229, 239, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(82, 156, 202, 0.24)" } }
+        },
+        "text": {
+          "$value": "#337EA9",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#529CCA" } }
+        }
+      },
+      "purple": {
+        "bg": {
+          "$value": "rgba(232, 222, 238, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(164, 117, 194, 0.24)" } }
+        },
+        "text": {
+          "$value": "#9065B0",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#A475C2" } }
+        }
+      },
+      "pink": {
+        "bg": {
+          "$value": "rgba(245, 224, 233, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(226, 85, 161, 0.24)" } }
+        },
+        "text": {
+          "$value": "#C14C8A",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#E255A1" } }
+        }
+      },
+      "red": {
+        "bg": {
+          "$value": "rgba(255, 226, 221, 0.5)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 115, 105, 0.24)" } }
+        },
+        "text": {
+          "$value": "#D44C47",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FF7369" } }
+        }
+      }
+    },
+    "selected": {
+      "$description": "Active/selected filter-pill bg/text pairs (stronger bg opacity than tag). Source: NOTION_SELECTED_COLORS.",
+      "default": {
+        "bg": {
+          "$value": "rgba(241, 91, 36, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(241, 91, 36, 0.25)" } }
+        },
+        "text": {
+          "$value": "{color.primitive.orange.500}",
+          "$description": "Light and dark are both literally #F15B24 in the source, so no dark extension is needed; aliased to the brand-accent primitive per the no-duplicate-literal rule."
+        }
+      },
+      "gray": {
+        "bg": {
+          "$value": "rgba(120, 119, 116, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(151, 154, 155, 0.3)" } }
+        },
+        "text": {
+          "$value": "#787774",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#9B9B9B" } }
+        }
+      },
+      "brown": {
+        "bg": {
+          "$value": "rgba(100, 71, 58, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(186, 133, 111, 0.3)" } }
+        },
+        "text": {
+          "$value": "#64473A",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#BA856F" } }
+        }
+      },
+      "orange": {
+        "bg": {
+          "$value": "rgba(217, 115, 13, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 163, 68, 0.3)" } }
+        },
+        "text": {
+          "$value": "#D9730D",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FFA344" } }
+        }
+      },
+      "yellow": {
+        "bg": {
+          "$value": "rgba(203, 145, 47, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 220, 73, 0.3)" } }
+        },
+        "text": {
+          "$value": "#CB912F",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FFDC49" } }
+        }
+      },
+      "green": {
+        "bg": {
+          "$value": "rgba(68, 131, 97, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(109, 184, 126, 0.3)" } }
+        },
+        "text": {
+          "$value": "#448361",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#6DB87E" } }
+        }
+      },
+      "blue": {
+        "bg": {
+          "$value": "rgba(51, 126, 169, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(82, 156, 202, 0.3)" } }
+        },
+        "text": {
+          "$value": "#337EA9",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#529CCA" } }
+        }
+      },
+      "purple": {
+        "bg": {
+          "$value": "rgba(144, 101, 176, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(164, 117, 194, 0.3)" } }
+        },
+        "text": {
+          "$value": "#9065B0",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#A475C2" } }
+        }
+      },
+      "pink": {
+        "bg": {
+          "$value": "rgba(193, 76, 138, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(226, 85, 161, 0.3)" } }
+        },
+        "text": {
+          "$value": "#C14C8A",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#E255A1" } }
+        }
+      },
+      "red": {
+        "bg": {
+          "$value": "rgba(212, 76, 71, 0.15)",
+          "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255, 115, 105, 0.3)" } }
+        },
+        "text": {
+          "$value": "#D44C47",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FF7369" } }
+        }
+      }
+    },
+    "callout": {
+      "$description": "Callout block solid backgrounds only (bg half of the normalised {bg,text} pair). Source: NOTION_CALLOUT_COLORS.{light,dark}. Matching text colors are the sibling notion.calloutText.<name> group below.",
+      "default": {
+        "$value": "#F7F6F3",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#2F2F2F" } }
+      },
+      "gray": {
+        "$value": "#F1F1EF",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#454B4E" } }
+      },
+      "brown": {
+        "$value": "#F4EEEE",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#4D3D3A" } }
+      },
+      "orange": {
+        "$value": "#FBECDD",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#5C3C1E" } }
+      },
+      "yellow": {
+        "$value": "#FBF3DB",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#564328" } }
+      },
+      "green": {
+        "$value": "#EDF3EC",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#364A3F" } }
+      },
+      "blue": {
+        "$value": "#E7F3F8",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#264653" } }
+      },
+      "purple": {
+        "$value": "#F4F0F7",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#443D56" } }
+      },
+      "pink": {
+        "$value": "#F9F0F3",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#533245" } }
+      },
+      "red": {
+        "$value": "#FDEBEB",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#593938" } }
+      }
+    },
+    "calloutText": {
+      "$description": "Callout block text colors (text half of the normalised {bg,text} pair). Source: NOTION_CALLOUT_COLORS.{text,textDark}. Sibling of notion.callout.<name> — the app adapter zips the two back into {bg, text} per mode.",
+      "default": {
+        "$value": "#37352F",
+        "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.white}" } }
+      },
+      "gray": {
+        "$value": "#787774",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#9B9B9B" } }
+      },
+      "brown": {
+        "$value": "#64473A",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#D4B9A9" } }
+      },
+      "orange": {
+        "$value": "#D9730D",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FFA344" } }
+      },
+      "yellow": {
+        "$value": "#CB912F",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FFDC49" } }
+      },
+      "green": {
+        "$value": "#448361",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#6DB87E" } }
+      },
+      "blue": {
+        "$value": "#337EA9",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#529CCA" } }
+      },
+      "purple": {
+        "$value": "#9065B0",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#A475C2" } }
+      },
+      "pink": {
+        "$value": "#C14C8A",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#E255A1" } }
+      },
+      "red": {
+        "$value": "#D44C47",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FF7369" } }
+      }
+    },
+    "highlight": {
+      "$description": "Threads-style marker stroke tokens for inline highlights: bg (wash), pressure (wet tip), text (always recolored). Source: NOTION_HIGHLIGHT_COLORS. No 'default' entry in the source.",
+      "gray": {
+        "bg": {
+          "$value": "#A7ADB4",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#2F3337" } }
+        },
+        "pressure": {
+          "$value": "#6E7A87",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#3E454C" } }
+        },
+        "text": {
+          "$value": "#4b5458",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#C0C7CE" } }
+        }
+      },
+      "brown": {
+        "bg": {
+          "$value": "#D39C75",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#472E1C" } }
+        },
+        "pressure": {
+          "$value": "#B96D36",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#613C21" } }
+        },
+        "text": {
+          "$value": "#77392c",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#DFB090" } }
+        }
+      },
+      "orange": {
+        "bg": {
+          "$value": "#FB956F",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#58200B" } }
+        },
+        "pressure": {
+          "$value": "{color.primitive.orange.500}",
+          "$description": "Literally #F15B24 in the light source — this is the app accent used as the marker's wet-tip color. Aliased per the no-duplicate-literal rule.",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#7B2607" } }
+        },
+        "text": {
+          "$value": "#9a0e09",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FF966F" } }
+        }
+      },
+      "yellow": {
+        "bg": {
+          "$value": "#FAEA4E",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#58510B" } }
+        },
+        "pressure": {
+          "$value": "#EFD900",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#7B6D07" } }
+        },
+        "text": {
+          "$value": "#9a6a09",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FFF86F" } }
+        }
+      },
+      "green": {
+        "bg": {
+          "$value": "#22C55E40",
+          "$description": "Candle-up (#22C55E) at 25% alpha, per notionColors.ts comment.",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#0B5827" } }
+        },
+        "pressure": {
+          "$value": "#16A34A",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#077B32" } }
+        },
+        "text": {
+          "$value": "#145f1e",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#6FFFA4" } }
+        }
+      },
+      "blue": {
+        "bg": {
+          "$value": "#5BB0ED",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#113752" } }
+        },
+        "pressure": {
+          "$value": "#1289DD",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#104972" } }
+        },
+        "text": {
+          "$value": "#15798f",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#7AC1F4" } }
+        }
+      },
+      "purple": {
+        "bg": {
+          "$value": "#B268E0",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#38174C" } }
+        },
+        "pressure": {
+          "$value": "#8B24CB",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#4A186A" } }
+        },
+        "text": {
+          "$value": "#462083",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#C385E9" } }
+        }
+      },
+      "pink": {
+        "bg": {
+          "$value": "#E463A4",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#4E1531" } }
+        },
+        "pressure": {
+          "$value": "#D11E78",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#6D1641" } }
+        },
+        "text": {
+          "$value": "#871d6b",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#ED81B7" } }
+        }
+      },
+      "red": {
+        "bg": {
+          "$value": "#ef444463",
+          "$description": "Candle-down (#EF4444) at low alpha, per notionColors.ts comment.",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#580B0B" } }
+        },
+        "pressure": {
+          "$value": "#EF4444",
+          "$description": "Candle down.",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#7B0707" } }
+        },
+        "text": {
+          "$value": "#970c2d",
+          "$extensions": { "com.cryptobros.modes": { "dark": "#FF6F6F" } }
+        }
+      }
+    }
+  }
+}

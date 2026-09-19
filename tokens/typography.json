@@ -1,0 +1,53 @@
+{
+  "typography": {
+    "$type": "typography",
+    "largeTitle": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "34px", "fontWeight": 700, "lineHeight": "41px", "letterSpacing": "-0.5px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "largeTitle" } }
+    },
+    "postTitle": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "24px", "fontWeight": 700, "lineHeight": "30px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "title2" } }
+    },
+    "title1": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "28px", "fontWeight": 700, "lineHeight": "34px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "title" } }
+    },
+    "title2": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "22px", "fontWeight": 700, "lineHeight": "28px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "title2" } }
+    },
+    "title3": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "20px", "fontWeight": 600, "lineHeight": "25px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "title3" } }
+    },
+    "headline": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "17px", "fontWeight": 600, "lineHeight": "22px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "headline" } }
+    },
+    "body": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "14px", "fontWeight": 400, "lineHeight": "22px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "body" } }
+    },
+    "callout": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "16px", "fontWeight": 400, "lineHeight": "21px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "callout" } }
+    },
+    "subhead": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "15px", "fontWeight": 400, "lineHeight": "20px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "subheadline" } }
+    },
+    "footnote": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "13px", "fontWeight": 400, "lineHeight": "18px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "footnote" } }
+    },
+    "caption1": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "12px", "fontWeight": 400, "lineHeight": "16px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "caption" } }
+    },
+    "caption2": {
+      "$value": { "fontFamily": "{font.family.sans}", "fontSize": "11px", "fontWeight": 400, "lineHeight": "13px", "letterSpacing": "0px" },
+      "$extensions": { "com.cryptobros.ios": { "relativeTo": "caption2" } }
+    }
+  }
+}

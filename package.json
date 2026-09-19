@@ -1,0 +1,27 @@
+{
+  "name": "@crypto-bros/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Crypto Bros — colors, spacing, radii, typography and motion. Emits a Swift Package, CSS, TypeScript and flat JSON.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "dist",
+    "Sources",
+    "Package.swift"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check:dist": "git diff --exit-code dist Sources/CryptoBrosTokens/Generated",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "colorjs.io": "^0.5.2",
+    "style-dictionary": "^5.5.0",
+    "typescript": "^5.6.3"
+  }
+}

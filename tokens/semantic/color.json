@@ -1,0 +1,114 @@
+{
+  "color": {
+    "$type": "color",
+    "background": {
+      "$value": "#F2F2F2",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.black}" } }
+    },
+    "backgroundTertiary": {
+      "$value": "{color.primitive.zinc.200}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.900}" } }
+    },
+    "surface": {
+      "$value": "#F8F8F8",
+      "$extensions": { "com.cryptobros.modes": { "dark": "#1A1A1A" } }
+    },
+    "surfaceHighlight": {
+      "$value": "{color.primitive.zinc.50}",
+      "$description": "Pressed state on list items.",
+      "$extensions": { "com.cryptobros.modes": { "dark": "#222222" } }
+    },
+    "text": {
+      "$value": "{color.primitive.black}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.white}" } }
+    },
+    "textSecondary": {
+      "$value": "{color.primitive.zinc.600}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.400}" } }
+    },
+    "textTertiary": {
+      "$value": "{color.primitive.zinc.400}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.500}" } }
+    },
+    "textInverse": {
+      "$value": "{color.primitive.white}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.black}" } }
+    },
+    "border": {
+      "$value": "{color.primitive.zinc.200}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.800}" } }
+    },
+    "borderSecondary": {
+      "$value": "{color.primitive.zinc.100}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.900}" } }
+    },
+    "accent": {
+      "$value": "{color.primitive.orange.500}",
+      "$description": "Brand accent. UI only. Never use for Bitcoin-the-asset."
+    },
+    "accentHover": {
+      "$value": "{color.primitive.orange.600}",
+      "$description": "New token; mirrors the dashboard's primaryHover.",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.orange.400}" } }
+    },
+    "accentLight": {
+      "$value": "{color.primitive.orange.100}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.orange.900}" } }
+    },
+    "accentDark": {
+      "$value": "{color.primitive.orange.700}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.orange.300}" } }
+    },
+    "tabBarBackground": {
+      "$value": "rgba(255,255,255,0.85)",
+      "$extensions": { "com.cryptobros.modes": { "dark": "rgba(0,0,0,0.85)" } }
+    },
+    "tabBarBorder": { "$value": "{color.border}" },
+    "tabBarActive": { "$value": "{color.accent}" },
+    "tabBarInactive": {
+      "$value": "{color.primitive.zinc.400}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.500}" } }
+    },
+    "success": { "$value": "#22C55E" },
+    "warning": { "$value": "#EAB308" },
+    "error": { "$value": "#EF4444" },
+    "devToolsAccent": { "$value": "#9333EA" },
+    "devToolsAccentBg": { "$value": "rgba(147,51,234,0.15)" },
+    "videoBannerBg": { "$value": "{color.primitive.black}" },
+    "playButtonBg": { "$value": "rgba(0,0,0,0.3)" },
+    "actionsBorder": { "$value": "rgba(128,128,128,0.2)" },
+    "skeleton": {
+      "$value": "{color.primitive.zinc.300}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.800}" } }
+    },
+    "toggleThumb": { "$value": "{color.primitive.white}" },
+    "innerBorder": {
+      "$value": "rgba(255,255,255,0.5)",
+      "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255,255,255,0.1)" } }
+    },
+    "divider": {
+      "$value": "rgba(0,0,0,0.08)",
+      "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255,255,255,0.1)" } }
+    },
+    "crosshair": {
+      "$value": "rgba(0,0,0,0.1)",
+      "$extensions": { "com.cryptobros.modes": { "dark": "rgba(255,255,255,0.2)" } }
+    },
+    "tooltipBackground": {
+      "$value": "rgba(255,255,255,0.4)",
+      "$extensions": { "com.cryptobros.modes": { "dark": "rgba(40,40,40,0.45)" } }
+    },
+    "errorText": {
+      "$value": "#DC2626",
+      "$extensions": { "com.cryptobros.modes": { "dark": "#FCA5A5" } }
+    },
+    "errorBackground": {
+      "$value": "#FEE2E2",
+      "$extensions": { "com.cryptobros.modes": { "dark": "#7F1D1D" } }
+    },
+    "canvasDot": {
+      "$value": "{color.primitive.white}",
+      "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.black}" } }
+    }
+  }
+}

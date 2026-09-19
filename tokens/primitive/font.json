@@ -1,0 +1,8 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans": { "$value": "Inter Variable" }
+    }
+  }
+}

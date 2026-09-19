@@ -1,0 +1,61 @@
+{
+  "color": {
+    "coin": {
+      "$type": "color",
+      "$description": "Per-coin accent colors for chart lines/dots. Source: constants/crypto.ts COIN_COLORS, keyed by CoinGecko id (converted to lowerCamel). All mode-invariant — brand colors do not change between light/dark. BTC has no entry in COIN_COLORS (default theme accent is used at the call site); it is included here as its own token because chart embeds, halving markers and EMA orange all need Bitcoin-the-asset explicitly.",
+      "bitcoin": {
+        "$value": "{color.primitive.bitcoin}",
+        "$description": "Bitcoin-the-asset. Never a UI accent."
+      },
+      "ethereum": { "$value": "#8B5CF6" },
+      "cardano": { "$value": "#8B5CF6" },
+      "solana": { "$value": "#8B5CF6" },
+      "chainlink": { "$value": "#3B82F6" },
+      "sui": { "$value": "#3B82F6" },
+      "ripple": { "$value": "#9CA3AF" },
+      "dogecoin": { "$value": "#EAB308" },
+      "hyperliquid": { "$value": "#22C55E" },
+      "binancecoin": { "$value": "#F0B90B" },
+      "monero": { "$value": "#FF6600" },
+      "litecoin": { "$value": "#345D9D" },
+      "avalanche2": {
+        "$value": "#E84142",
+        "$description": "CoinGecko id 'avalanche-2'."
+      },
+      "polkadot": { "$value": "#E6007A" },
+      "theOpenNetwork": {
+        "$value": "#0098EA",
+        "$description": "CoinGecko id 'the-open-network'."
+      },
+      "mantle": { "$value": "#65EDBB" },
+      "stellar": { "$value": "#14B6E7" },
+      "hederaHashgraph": {
+        "$value": "#3EC878",
+        "$description": "CoinGecko id 'hedera-hashgraph'."
+      },
+      "cryptoComChain": {
+        "$value": "#5C7CFA",
+        "$description": "CoinGecko id 'crypto-com-chain'."
+      },
+      "shibaInu": {
+        "$value": "#FFA409",
+        "$description": "CoinGecko id 'shiba-inu'."
+      },
+      "zcash": { "$value": "#F4B728" },
+      "aave": { "$value": "#B6509E" },
+      "uniswap": { "$value": "#FF007A" },
+      "curveDaoToken": {
+        "$value": "#3B82F6",
+        "$description": "CoinGecko id 'curve-dao-token'."
+      },
+      "paxGold": {
+        "$value": "#EAB308",
+        "$description": "CoinGecko id 'pax-gold'. App value #EAB308; the dashboard's chartEmbedSyntax.js has an undocumented drift to #D4AF37 — not resolved here, app (crypto.ts) is the source of truth per task scope."
+      },
+      "kinesisSilver": {
+        "$value": "#C0C0C0",
+        "$description": "CoinGecko id 'kinesis-silver'."
+      }
+    }
+  }
+}

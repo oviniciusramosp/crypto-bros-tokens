@@ -1,0 +1,34 @@
+{
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "fast": { "$value": "200ms" },
+      "medium": { "$value": "350ms" },
+      "slow": { "$value": "600ms" },
+      "emphasis": { "$value": "800ms" }
+    },
+    "press": {
+      "$type": "duration",
+      "in": { "$value": "120ms" },
+      "out": { "$value": "200ms" },
+      "inQuick": { "$value": "100ms" },
+      "outQuick": { "$value": "150ms" }
+    },
+    "spring": {
+      "$type": "spring",
+      "snappy": { "$value": { "mass": 1, "stiffness": 300, "damping": 20 }, "$description": "Buttons, toggles — quick and responsive." },
+      "natural": { "$value": { "mass": 1, "stiffness": 180, "damping": 18 }, "$description": "Cards, content — smooth and organic." },
+      "bouncy": { "$value": { "mass": 1, "stiffness": 150, "damping": 12 }, "$description": "Celebrations, emphasis — playful." },
+      "gentle": { "$value": { "mass": 1, "stiffness": 120, "damping": 20 }, "$description": "Subtle movements." },
+      "cardPosition": { "$value": { "mass": 1, "stiffness": 170, "damping": 24 }, "$description": "Card expansion position — gentle overshoot for App Store feel." },
+      "widgetPress": { "$value": { "mass": 0.5, "stiffness": 200, "damping": 15 }, "$description": "Widget press scale/spring for AnimatedPressable and Gesture.Tap patterns." },
+      "modalEnter": { "$value": { "mass": 0.8, "stiffness": 240, "damping": 22 }, "$description": "GlassModal card entrance — gentle overshoot for premium feel." }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "out": { "$value": [0.33, 1, 0.68, 1] },
+      "overshoot": { "$value": [0.2, 0.9, 0.3, 1.15] }
+    },
+    "widgetPressScale": { "$type": "number", "$value": 0.97 }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "color": {
+    "category": {
+      "$type": "color",
+      "mercado": {
+        "$value": "#3B82F6",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#60A5FA" } }
+      },
+      "estudos": {
+        "$value": "#8B5CF6",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#A78BFA" } }
+      },
+      "altcoins": {
+        "$value": "{color.primitive.orange.500}",
+        "$description": "Alias: same as the brand accent."
+      },
+      "trade": {
+        "$value": "#10B981",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#34D399" } }
+      },
+      "video": {
+        "$value": "#EF4444",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#F87171" } }
+      },
+      "ath": {
+        "$value": "#F59E0B",
+        "$description": "Gold/Amber for All-Time High celebration.",
+        "$extensions": { "com.cryptobros.modes": { "dark": "#FBBF24" } }
+      },
+      "mais": {
+        "$value": "{color.primitive.zinc.500}",
+        "$extensions": { "com.cryptobros.modes": { "dark": "{color.primitive.zinc.400}" } }
+      }
+    }
+  }
+}

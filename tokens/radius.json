@@ -1,0 +1,14 @@
+{
+  "radius": {
+    "$type": "dimension",
+    "xs": { "$value": "4px" },
+    "sm": { "$value": "6px" },
+    "md": { "$value": "8px" },
+    "mdl": { "$value": "12px", "$description": "New step (inputs, dashboard's radius, site's most-used literal)." },
+    "lg": { "$value": "16px" },
+    "xl": { "$value": "22px" },
+    "full": { "$value": "9999px" },
+    "card": { "$value": "{radius.lg}" },
+    "pill": { "$value": "{radius.full}" }
+  }
+}

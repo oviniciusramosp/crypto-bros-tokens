@@ -1,0 +1,35 @@
+{
+  "color": {
+    "primitive": {
+      "$type": "color",
+      "white": { "$value": "#FFFFFF" },
+      "black": { "$value": "#000000" },
+      "orange": {
+        "50": { "$value": "#FEF3EE" },
+        "100": { "$value": "#FCE4D9" },
+        "200": { "$value": "#F9C7B3" },
+        "300": { "$value": "#F5A182" },
+        "400": { "$value": "#F37A52" },
+        "500": { "$value": "#F15B24", "$description": "Brand accent. UI only." },
+        "600": { "$value": "#D94A1A" },
+        "700": { "$value": "#B53D15" },
+        "800": { "$value": "#8F3011" },
+        "900": { "$value": "#6A240D" }
+      },
+      "zinc": {
+        "50": { "$value": "#FAFAFA" },
+        "100": { "$value": "#F4F4F5" },
+        "200": { "$value": "#E4E4E7" },
+        "300": { "$value": "#D4D4D8" },
+        "400": { "$value": "#A1A1AA" },
+        "500": { "$value": "#71717A" },
+        "600": { "$value": "#52525B" },
+        "700": { "$value": "#3F3F46" },
+        "800": { "$value": "#27272A" },
+        "900": { "$value": "#18181B" },
+        "950": { "$value": "#09090B" }
+      },
+      "bitcoin": { "$value": "#F7931A", "$description": "Bitcoin-the-asset. Never a UI accent." }
+    }
+  }
+}

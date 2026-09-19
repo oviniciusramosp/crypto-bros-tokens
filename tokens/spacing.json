@@ -1,0 +1,13 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "xs": { "$value": "4px" },
+    "sm": { "$value": "8px" },
+    "smd": { "$value": "12px", "$description": "New scale step introduced by the tokens package (day 1)." },
+    "md": { "$value": "16px" },
+    "lg": { "$value": "20px" },
+    "xl": { "$value": "32px" },
+    "xxl": { "$value": "48px" },
+    "screenHorizontal": { "$value": "{spacing.lg}" }
+  }
+}

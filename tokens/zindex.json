@@ -1,0 +1,11 @@
+{
+  "zIndex": {
+    "$type": "zIndex",
+    "base": { "$value": 0, "$description": "Default layer for content." },
+    "content": { "$value": 1, "$description": "Video layers (thumbnail over player)." },
+    "elevated": { "$value": 5, "$description": "Elevated cards (e.g. ATH animation) — above siblings, below overlays." },
+    "overlay": { "$value": 10, "$description": "Screen overlays (status bar gradient, tab bar gradient)." },
+    "modal": { "$value": 1000, "$description": "Modal backdrop and content." },
+    "tooltip": { "$value": 1100, "$description": "Tooltip overlay (above modals, e.g. glossary tooltips)." }
+  }
+}
